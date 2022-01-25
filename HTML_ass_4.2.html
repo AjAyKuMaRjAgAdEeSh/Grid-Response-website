@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid Responsive Page</title>
+    </head>
+
+    <body>
+        <style>
+            body
+{
+  margin:1px;
+  font-family: 'Verdana', sans-serif;
+}
+.head{
+    background-image:url(https://i.pinimg.com/564x/f9/71/b9/f971b9ba330a1782d6fc0da34c4ef738.jpg);
+    height: 500px;
+    position:relative;
+    background-position:bottom;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+}
+h1.title{
+   background-color: rgb(63, 61, 61);
+   padding:10px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 40px;
+    color:rgb(255, 240, 211);
+    position:absolute;
+    top:20%;
+    width:55%;
+    margin-left: 20%;
+}
+p.subtitle{
+    background-color:rgb(63, 61, 61);;
+    padding:10px;
+    text-align: center;
+    letter-spacing: 2px;
+    position:absolute;
+    font-size: 25px;
+    color:rgb(255, 240, 211);
+    text-transform: capitalize;
+    top:35%;
+    width:47%;
+    margin-left: 25%;
+  }
+  .button{
+    background-color: rgb(63, 61, 61);;
+    color:rgb(255, 240, 211);
+    position:absolute;
+    top:55%;
+    font-size: 20px;
+    border:whitesmoke 1px solid;
+    padding:10px 20px;
+    border-radius:10px;
+    text-decoration:none ;
+    width:7.5%;
+    margin-left:45%;
+  }
+  .button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(46,46,46);
+   }
+  #sec1,#sec3{
+    background-color:rgba(255, 209, 6, 0.897);
+    color:black;
+    font-size: 20px;
+    height:6cm;
+    text-align: center;
+    line-height: 35px;
+    padding:35px;
+  }
+  #sec3{
+      height:4cm;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-around;
+}
+.flex p{
+    width: 40%;
+    font-size: 15px;
+}
+.foot{
+    background-color: rgb(41, 65, 34);
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+}
+#sec4{
+    display:flex;
+  }
+.div1,.div2{
+    padding:20px 35px;
+    text-align: center;
+    font-family: 'Verdana',sans-serif;
+    line-height: 30px;
+    color:white;
+}
+.div1{
+  background-color: rgba(248, 7, 7, 0.897);
+}
+.div2{
+   background-color: rgb(3, 3, 3);
+}
+#sec2{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(81, 46, 90);
+    padding:4em 2em 2em;
+}
+#sec2 img{
+    width: 100%;
+}
+#sec2 div{
+    background-color: rgb(206, 163, 214);
+    width: 25%;
+    text-align: center;
+    margin: 40px 0;
+}
+#sec2 h3{
+    margin: 30px 0;
+    font-size: 23px;
+}
+#sec2 div p{
+    font-size: 18px;
+    padding: 30px;
+    line-height: 30px;
+}
+        </style>
+        <header class="head">
+            <h1 class="title">Welcome to acme web solutions</h1>
+            <p class="subtitle">We provide solutions for all your digital needs</p>
+            <a href="#sec2" class="button">Know More</a>
+        </header>
+
+        <section id="sec1">
+            <h2>Web and application development</h2>
+            <div class="flex">
+            <p>Web application and development is the creation of application programs that reside on remote servers and 
+            are delivered to the user's device over the Internet 
+            </p>
+            <p>Web application and development is the creation of application programs that reside on remote servers and 
+                are delivered to the user's device over the Internet 
+                </p>
+                </div>
+        </section>
+
+        <section id="sec2">
+            <div class="box2">
+                <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="mob app pic" height="170px" width="120px">
+                <h3>Mobile applications</h3>
+                <p>A mobile application or app is a computer program or software application designed to run on a mobile device 
+                such as a phone, tablet, or watch.</p>
+            </div>
+            <div class="box1">
+                <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="tech marketing pic" height="170px" width="120px">
+                <h3>Tech marketing</h3>
+                <p>The majority of marketing roles within tech companies are focused on marketing communication and outbound, 
+                demand generating activities to support the next product launch</p>
+            </div>
+            <div class="box1">
+                <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="web dev pic" height="170px" width="120px">
+                <h3>Web development</h3>
+                <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet 
+                (a private network).</p>
+            </div>      
+        </section>
+        <section id="sec3">
+            <h2>We handle all your digital needs</h2>
+            <p>We are a one-stop for all your digital needs from web development to digital marketing </p>
+        </section>
+
+        <section id="sec4">
+            <div class="div1">
+                <h2>Contact Us</h2>
+                <p>You can contact us through the email address given below: acmewebsolutions@gmail.com 
+                </p>
+            </div>
+            <div class="div2">
+                <h2>About Our Company</h2>
+                <p>We the startup company and are working towards digital literacy in our nation  
+                </p>
+            </div>
+        </section>
+
+        <footer >
+           <div class="foot"><h2>Acme Web Solutions </h2>
+        <h2>Project By <span style="color:rgb(255, 240, 211)">AK</span></h2></div>
+        </footer>
+    </body>
+</html>
